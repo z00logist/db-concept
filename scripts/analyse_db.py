@@ -1,5 +1,6 @@
 import os
-
+from dotenv import load_dotenv  # Import load_dotenv from python-dotenv
+load_dotenv() 
 import psycopg2
 import typer
 from psycopg2.extras import RealDictCursor
@@ -9,11 +10,11 @@ from rich.table import Table
 console = Console()
 app = typer.Typer()
 
-DB_HOST = os.getenv("DATABASE_HOST")
-DB_PORT = os.getenv("DATABASE_PORT")
-DB_NAME = os.getenv("POSTGRES_DB")
-DB_USER = os.getenv("POSTGRES_USER") 
-DB_PASSWORD = os.getenv("POSTGRES_PASSWORD")
+DB_HOST = os.getenv("DATABASE_HOST", "localhost")
+DB_PORT = os.getenv("DATABASE_PORT", "5432")
+DB_NAME = os.getenv("DATABASE_NAME", "yet_another_gpt_wrapper")
+DB_USER = os.getenv("DATABASE_USER", "postgres")
+DB_PASSWORD = os.getenv("DATABASE_PASSWORD", "postgres")
 
 
 def get_connection() -> None:
