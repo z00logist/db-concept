@@ -3,13 +3,14 @@
 
 It is a concept of database, which could potentially represent some service with LLM. 
 
+![diagram](assets/diagram.png)
+
 ## Table of Contents
 
 - [Prerequisites](#prerequisites)
 - [Setup](#setup)
-  - [1. Create the `.env` file](#1-create-the-env-file)
-  - [2. Start Postgres via Docker Compose](#2-start-postgres-via-docker-compose)
-  - [3. Install Dependencies](#3-install-dependencies)
+  - [1. Start Postgres via Docker Compose](#2-start-postgres-via-docker-compose)
+  - [2. Install Dependencies](#3-install-dependencies)
 - [Usage](#usage)
   - [Running Commands](#running-commands)
   - [Available Commands](#available-commands)
@@ -24,25 +25,14 @@ It is a concept of database, which could potentially represent some service with
 
 ## Setup
 
-### 1. Create the `.env` file
 
-Create a `.env` file in the root directory of the project. This file should define the environment variables used by the Python script to connect to the database:
-
-```bash
-DATABASE_HOST=
-DATABASE_PORT=
-DATABASE_NAME=
-DATABASE_USER=
-DATABASE_PASSWORD=
-```
-
-### 2. Start DB via Docker Compose
+### 1. Start DB via Docker Compose
 
 ```bash
 docker compose up -d db
 ```
 
-### 3. Install Dependencies
+### 2. Install Dependencies
 
 ```bash
 uv sync
