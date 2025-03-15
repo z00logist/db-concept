@@ -1,5 +1,5 @@
 
-# Concept of DB: Yeat Another GPT Wrapper
+# Concept of DB: Yet Another GPT Wrapper
 
 It is a concept of database, which could potentially represent some service with LLM. 
 
