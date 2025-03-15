@@ -14,8 +14,6 @@ It is a concept of database, which could potentially represent some service with
   - [Running Commands](#running-commands)
   - [Available Commands](#available-commands)
   - [Recommended Order of Commands](#recommended-order-of-commands)
-- [License](#license)
-
 ---
 
 ## Prerequisites
