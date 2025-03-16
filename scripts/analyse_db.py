@@ -1,6 +1,5 @@
 import os
-from dotenv import load_dotenv  # Import load_dotenv from python-dotenv
-load_dotenv() 
+
 import psycopg2
 import typer
 from psycopg2.extras import RealDictCursor
